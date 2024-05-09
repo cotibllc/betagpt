@@ -9,7 +9,7 @@ FROM python:3.9-slim
 RUN pip install flask requests
 
 # Create app directory
-WORKDIR BetaGPT
+WORKDIR /app
 
 # Copy application files
 COPY app.py .
