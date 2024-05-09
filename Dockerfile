@@ -9,14 +9,14 @@ FROM python:3.9-slim
 RUN pip install flask requests
 
 # Create app directory
-WORKDIR F:\Projects\githubprojects\BetaGPT
+WORKDIR BetaGPT
 
 # Copy application files
 COPY app.py .
 COPY templates templates/
 
 # Expose port
-EXPOSE 443
+EXPOSE 8443
 
 # Run the application
 CMD ["python", "app.py"]
